@@ -1,0 +1,55 @@
+.btn-circle {
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 17px;
+}
+
+.nav li a.tds-inline{
+	display: inline;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+.btn-primary {
+    background: #770000;
+    color: #ffffff;
+    border-color: #000;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #cc0000;
+  	border-color: #770000;
+}
+ 
+.btn-primary:active, .btn-primary:active:focus {
+    background: #ff0000;
+    
+    
+}
+
+ul.nav-button-drop.dropdown-menu{
+	margin-top: 8px;
+}
+
+.navbar-inverse .navbar-nav>.open>a.tds-inline, .navbar-inverse .navbar-nav>.open>a.tds-inline:focus, .navbar-inverse .navbar-nav>.open>a.tds-inline:hover {
+	background-color: #222;
+	}
+
+.search-btn{
+	margin-left: 5px;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+a {
+	color: #770000;
+}
