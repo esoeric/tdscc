@@ -54,10 +54,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => $_EBV['DB_HOST'],
-            'database'  => $_EBV['DB_DATABASE'],
-            'username'  => $_EBV['DB_USERNAME'],
-            'password'  => $_EBV['DB_PASSWORD'],
+            'host'      => env('DB_HOST', 'localhost'),
+            'database'  => env('DB_DATABASE', 'forge'),
+            'username'  => env('DB_USERNAME', 'forge'),
+            'password'  => env('DB_PASSWORD', ''),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
