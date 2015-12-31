@@ -26,39 +26,51 @@
         </div>
         <div class="col-md-4">
             <div class="form-group">
-                <label for="status_id">Status:</label><br>
-                <select name="status_id" id="status_id"  class="form-control" >
-                    <option value="1">Production</option>
-                    <option value="2">Design</option>
-                    <option value="3">Prospect</option>
-                </select>
+                {!! Form::label('status_id', 'Status:') !!}
+                {!! Form::select('status_id', array('1' => 'Production', '2' => 'Design', '3' => 'Prospect'), null, ['class' => 'form-control']) !!}
             </div>
        
-        
             <div class="form-group">
-                <label for="pdm_id">PDM:</label><br>
-                <select name="pdm_id" id="pdm_id"  class="form-control" >
-                    <option value="1">Ben</option>
-                    <option value="2">Eric</option>
-                    <option value="3">Nancy</option>
-                    <option value="3">Sam</option>
-                </select>
+                {!! Form::label('pdm_id', 'PDM:') !!}
+                {!! Form::select('pdm_id', array('1' => 'Ben', '2' => 'Eric', '3' => 'Nancy', '4' => 'Sam'), null, ['class' => 'form-control']) !!}
+
             </div>
         
         
             <div class="form-group">
-                <label for="projectlead_id">Project Lead:</label><br>
-                <select name="projectlead_id" id="projectlead_id"  class="form-control" >
-                    <option value="1">Brian</option>
-                    <option value="2">Sean</option>
-                    <option value="3">Shawn</option>
-                </select>
+                {!! Form::label('projectlead_id', 'Project Lead:') !!}
+                {!! Form::select('projectlead_id', array('1' => 'Brian', '2' => 'Jason', '3' => 'Sean', '4' => 'Shawn'), null, ['class' => 'form-control']) !!}
+
             </div>
         </div>
+        
     <div class="col-md-12">
+    <hr>
+    </div>
+    <div class="col-md-3">
+            {!! Form::label('leadtype_id', 'Lead Type:') !!}
+            {!! Form::select('leadtype_id', array('1' => 'Brian', '2' => 'Jason', '3' => 'Sean', '4' => 'Shawn'), null, ['class' => 'form-control']) !!}
+    </div>
+    <div class="col-md-3">
+            {!! Form::label('leadtype_id', 'Lead Type:') !!}
+            {!! Form::select('leadtype_id', array('1' => 'Brian', '2' => 'Jason', '3' => 'Sean', '4' => 'Shawn'), null, ['class' => 'form-control']) !!}
+    </div>
+    <div class="col-md-3">
+            {!! Form::label('leadtype_id', 'Lead Type:') !!}
+            {!! Form::select('leadtype_id', array('1' => 'Brian', '2' => 'Jason', '3' => 'Sean', '4' => 'Shawn'), null, ['class' => 'form-control']) !!}
+    </div>
+    <div class="col-md-3">
+            {!! Form::label('leadtype_id', 'Lead Type:') !!}
+            {!! Form::select('leadtype_id', array('1' => 'Brian', '2' => 'Jason', '3' => 'Sean', '4' => 'Shawn'), null, ['class' => 'form-control']) !!}
+    </div>
+
+    <div class="col-md-12">
+    <br>
+    <hr>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Save Project</button>
         </div>
+
     </div>
     </form>
 </div>

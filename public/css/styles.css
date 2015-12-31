@@ -53,3 +53,11 @@ ul.nav-button-drop.dropdown-menu{
 a {
 	color: #770000;
 }
+
+.fa:hover {
+	color: #555;
+}
+
+.fa:active {
+	color: #555;
+}

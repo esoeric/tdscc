@@ -9,7 +9,9 @@
                 <div class="panel-heading">
 	                <h3>
 		    			@if (Auth::user()->can('edit-projects'))
+		    				<div class="pull-right">
 		    				<a href="{{ URL::action('ProjectsController@edit', $project->id) }}"><span class="fa fa-pencil-square-o"></span></a>
+		    				</div>
 		    			@endif
 		                {{ $project->name }}
 	    			</h3>
