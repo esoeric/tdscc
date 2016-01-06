@@ -17,6 +17,8 @@ class CreateProjectsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->integer('status_id')->unsigned();
+            $table->integer('pdm_id')->unsigned();
+            $table->integer('lead_id')->unsigned();
             $table->timestamps();
         });
     }
