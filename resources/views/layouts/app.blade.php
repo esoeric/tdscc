@@ -124,6 +124,7 @@
                                     <li><a href="{{ url('/login') }}">Login</a></li>
                                     <li><a href="{{ url('/register') }}">Register</a></li>
                                 @else
+                                    @if (Auth::user()->can('edit-projects'))
                                      <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" data-hover="dropdown" data-delay="1000" data-close-others="true">
                                             Admin <span class="caret"></span>
@@ -133,7 +134,8 @@
                                             <li><a href="{{ url('/Users') }}"><i class="fa fa-btn fa-users"></i>Users</a></li>
                                             <li><a href="{{ url('/Settings') }}"><i class="fa fa-btn fa-gear"></i>Settings</a></li>
                                         </ul>
-                                    </li>                                   
+                                    </li>
+                                    @endif                                   
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" data-hover="dropdown" data-delay="1000" data-close-others="true">
                                             {{ Auth::user()->name }} <span class="caret"></span>
@@ -160,13 +162,7 @@
     <script src="/js/sweetalert-dev.js"></script> 
     <script src="/js/bootstrap-hover-dropdown.min.js"></script>
     <script type="text/javascript">
-        swal({ 
-            type: "success",  
-            title: "Awesome!",   
-            text: "You now have a TDS account!",   
-            timer: 2400,   
-            showConfirmButton: false 
-        }); 
+
 
     </script>
 </body>
