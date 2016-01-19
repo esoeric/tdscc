@@ -41,15 +41,16 @@
     </div>
     <div class="col-md-3">
             {!! Form::label('leadtype_id', 'Lead Type:') !!}
-            {!! Form::select('leadtype_id', array('1' => 'Brian', '2' => 'Jason', '3' => 'Sean', '4' => 'Shawn'), null, ['class' => 'form-control']) !!}
+            {!! Form::select('leadtype_id', array('1' => 'Addition', '2' => 'Kitchen', '3' => 'Bath', '4' => 'Whole House', '5' => 'New House'), null, ['class' => 'form-control']) !!}
+    </div>
+    <div class="col-md-3">
+            {!! Form::label('start_date', 'Desired Start Date:') !!}
+            {!! Form::date('name', \Carbon\Carbon::now(), ['class' => 'form-control']) !!}
     </div>
     <div class="col-md-3">
             {!! Form::label('leadtype_id', 'Lead Type:') !!}
-            {!! Form::select('leadtype_id', array('1' => 'Brian', '2' => 'Jason', '3' => 'Sean', '4' => 'Shawn'), null, ['class' => 'form-control']) !!}
-    </div>
-    <div class="col-md-3">
-            {!! Form::label('leadtype_id', 'Lead Type:') !!}
-            {!! Form::select('leadtype_id', array('1' => 'Brian', '2' => 'Jason', '3' => 'Sean', '4' => 'Shawn'), null, ['class' => 'form-control']) !!}
+            <div class="selector"></div>
+        
     </div>
     <div class="col-md-3">
             {!! Form::label('leadtype_id', 'Lead Type:') !!}
