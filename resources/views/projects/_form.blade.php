@@ -45,16 +45,19 @@
     </div>
     <div class="col-md-3">
             {!! Form::label('start_date', 'Desired Start Date:') !!}
-            {!! Form::date('name', \Carbon\Carbon::now(), ['class' => 'form-control']) !!}
+            {!! Form::date('start_date', \Carbon\Carbon::now(), ['class' => 'form-control']) !!}
     </div>
     <div class="col-md-3">
-            {!! Form::label('leadtype_id', 'Lead Type:') !!}
-            <div class="selector"></div>
+            {!! Form::label('sale_price', 'Estimated Sale Price:') !!} <span id="sale_price_display"></span>
+             
+             <div class="tds-slider" id="slider"></div>
         
     </div>
-    <div class="col-md-3">
-            {!! Form::label('leadtype_id', 'Lead Type:') !!}
-            {!! Form::select('leadtype_id', array('1' => 'Brian', '2' => 'Jason', '3' => 'Sean', '4' => 'Shawn'), null, ['class' => 'form-control']) !!}
+   <div class="col-md-3">
+            {!! Form::label('duration', 'Duration:') !!} <span id="duration-display"></span>
+             
+             <div class="tds-slider" id="slider-duration"></div>
+        
     </div>
 
     <div class="col-md-12">
@@ -67,3 +70,34 @@
     </div>
    
 </div>
+<script type="text/javascript">
+  $(function() {
+    $( "#slider" ).slider({
+      range: true,
+      min: 0,
+      max: 1000,
+      step: 5,
+      values: [ 100, 150 ],
+      slide: function( event, ui ) {
+        $( "#sale_price_display" ).text( "$" + ui.values[ 0 ] + "K - $" + ui.values[ 1 ] +"K" );
+      }
+    });
+    $( "#sale_price_display" ).text( "$" + $( "#slider" ).slider( "values", 0 ) +
+      "K - $" + $( "#slider" ).slider( "values", 1 ) + "K");
+
+
+        $( "#slider-duration" ).slider({
+      range: true,
+      min: 0,
+      max: 52,
+      step: 1,
+      values: [ 10, 12 ],
+      slide: function( event, ui ) {
+        $( "#duration-display" ).text( ui.values[ 0 ] + " - " + ui.values[ 1 ] +"Weeks" );
+      }
+    });
+    $( "#duration-display" ).text( $( "#slider-duration" ).slider( "values", 0 ) +
+      " - " + $( "#slider" ).slider( "values", 1 ) + "Weeks");
+  });
+      
+</script>
