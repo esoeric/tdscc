@@ -132,7 +132,7 @@
                                         </a>
 
                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="{{ url('/Users') }}"><i class="fa fa-btn fa-users"></i>Users</a></li>
+                                            <li><a href="{{ url('/users') }}"><i class="fa fa-btn fa-users"></i>Users</a></li>
                                             <li><a href="{{ url('/Settings') }}"><i class="fa fa-btn fa-gear"></i>Settings</a></li>
                                         </ul>
                                     </li>

@@ -27,7 +27,12 @@ Route::group(['middleware' => ['web']], function () {
 	Route::auth();
 
 	Route::resource('projects', 'ProjectsController');
+	Route::resource('users', 'UsersController');
 });
+
+	
+
+
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
