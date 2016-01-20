@@ -12,7 +12,13 @@ class Project extends Model
     'description',
     'status_id',
     'pdm_id',
-    'lead_id'
+    'project_lead_id',
+    'project_type_id',
+    'probability',
+    'start_date',
+    'anticipated_price',
+    'duration'
+
 
     ];
 }
