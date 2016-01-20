@@ -165,7 +165,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-    </script>
+    <script> src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"</script>
        @yield('content')
 </body>
 </html>

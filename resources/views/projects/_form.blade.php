@@ -93,11 +93,11 @@
       step: 1,
       values: [ 10, 12 ],
       slide: function( event, ui ) {
-        $( "#duration-display" ).text( ui.values[ 0 ] + " - " + ui.values[ 1 ] +"Weeks" );
+        $( "#duration-display" ).text( ui.values[ 0 ] + " - " + ui.values[ 1 ] +" Weeks" );
       }
     });
     $( "#duration-display" ).text( $( "#slider-duration" ).slider( "values", 0 ) +
-      " - " + $( "#slider" ).slider( "values", 1 ) + "Weeks");
+      " - " + $( "#slider-duration" ).slider( "values", 1 ) + " Weeks");
   });
       
 </script>
