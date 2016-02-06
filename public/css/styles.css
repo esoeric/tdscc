@@ -1,3 +1,5 @@
+
+
 .btn-circle {
   width: 34px;
   height: 34px;
@@ -84,4 +86,10 @@ a {
 .slider-control{
 	border: none;
 	background: #fff;
+}
+
+.tds-box{
+  border: 1px solid #222;
+  height: 100px;
+  padding: 5px;
 }

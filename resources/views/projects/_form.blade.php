@@ -47,7 +47,7 @@
     
         <div class="col-md-6 form-group">
                 {!! Form::label('probability', 'Probability:') !!} 
-                {!! Form::text('probability', null, ['class' => 'slider-control']) !!} 
+                {!! Form::text('probability', null, ['class' => 'slider-control', 'readonly']) !!} 
                  <div class="tds-slider" id="slider-probability"></div>
             
         </div>
@@ -57,13 +57,13 @@
         </div>
         <div class="col-md-6 form-group">
                 {!! Form::label('anticipated_price', 'Estimated Sale Price:') !!}
-                {!! Form::text('anticipated_price', null, ['class' => 'slider-control']) !!}  
+                {!! Form::text('anticipated_price', null, ['class' => 'slider-control', 'readonly']) !!}  
                  <div class="tds-slider" id="slider-price"></div>
             
         </div>
        <div class="col-md-6 form-group">
                 {!! Form::label('duration', 'Duration:') !!}
-                {!! Form::text('duration', null, ['class' => 'slider-control']) !!}  
+                {!! Form::text('duration', null, ['class' => 'slider-control', 'readonly']) !!}  
                  <div class="tds-slider" id="slider-duration"></div>
             
         </div>

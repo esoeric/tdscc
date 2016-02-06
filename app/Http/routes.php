@@ -28,6 +28,7 @@ Route::group(['middleware' => ['web']], function () {
 
 	Route::resource('projects', 'ProjectsController');
 	Route::resource('users', 'UsersController');
+
 });
 
 	

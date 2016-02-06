@@ -52,6 +52,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="spark-navbar-collapse">
       <ul class="nav navbar-nav">
+      @if (Auth::user()->can('edit-projects'))
             <li class="navbar-btn dropdown">
                 <a class = "tds-inline dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" data-hover="dropdown" data-delay="1000" data-close-others="true">
                     <button type="button" class="btn btn-primary btn-circle"><i class="glyphicon glyphicon-plus"></i></button>
@@ -66,7 +67,7 @@
                                 
                             
             </li>
-
+    @endif
 
 
 
@@ -139,7 +140,7 @@
                                     @endif                                   
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" data-hover="dropdown" data-delay="1000" data-close-others="true">
-                                            {{ Auth::user()->name }} <span class="caret"></span>
+                                            {{ Auth::user()->f_name }} {{ Auth::user()->l_name }}<span class="caret"></span>
                                         </a>
 
                                         <ul class="dropdown-menu" role="menu">
@@ -162,10 +163,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="/js/sweetalert-dev.js"></script> 
     <script src="/js/bootstrap-hover-dropdown.min.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="/js/todo.js"type="text/javascript"></script>   
        @yield('content')
 </body>
 </html>
